@@ -25,8 +25,28 @@ public class ArrayOperations {
     in the array arr.
      */
     public int countEvens(){
+        int count = 0;
+        for(int n: arr){
+            if(n % 2 == 0)
+                count++;
+        }
 
-        return 0;
+//        for (int i = 0; i < arr.length; i++) {
+//            if(arr[i] % 2 == 0) {
+//                count++;
+//            }
+//        }
+        return count;
+    }
+
+    public int getMaxValue(){
+        int max = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if(arr[i] > max)
+                max = arr[i];
+        }
+        return max;
+
     }
 
 
