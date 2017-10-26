@@ -5,23 +5,32 @@ import java.util.Arrays;
  */
 public class WednesdayPractice {
 
-
     /*
     Returns the total number of characters contained in
     all of the strings in strs.
      */
-//    public int totalChars(String[] strs){
-//
-//    }
+    public int totalChars(String[] strs){
+        int tots = 0;
+//        for (int i = 0; i < strs.length; i++) {
+//            tots += strs[i].length();
+//        }
+        for(String s: strs) {
+            tots += s.length();
+        }
+        return tots;
+    }
 
     /*
     Returns the arithmetic mean of the values in nums.
     Note that this returns a double, so it should include any decimals.
      */
-//    public double average(int[] nums){
-//
-//
-//    }
+    public double average(int[] nums){
+        int totes = 0;
+        for(int n: nums)
+            totes += n;
+        return (double)totes/nums.length;
+
+    }
 
     /*
     Returns the index of the string with the fewest characters

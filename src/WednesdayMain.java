@@ -8,11 +8,10 @@ public class WednesdayMain {
         int[] intTest = {7, 4, 1, 3, 0, 1, 10, 5, 8};
         String[] strTest = {"Computer", "science", "for", "life", "#java", "#hashtag"};
 
-
         WednesdayPractice obj = new WednesdayPractice();
-//        System.out.println(obj.totalChars(strTest));
+        System.out.println(obj.totalChars(strTest));  //35
 
-//        System.out.println(obj.average(intTest));
+        System.out.println(obj.average(intTest));
 
 //        System.out.println(obj.indexOfShortestString(strTest));
 
