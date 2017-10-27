@@ -36,17 +36,30 @@ public class WednesdayPractice {
     Returns the index of the string with the fewest characters
     in strs.
      */
-//    public int indexOfShortestString(String[] strs){
-//
-//    }
+    public int indexOfShortestString(String[] strs){
+        int mindex = 0;
+        for (int i = 0; i < strs.length; i++) {
+            if(strs[i].length() < strs[mindex].length())
+                mindex = i;
+        }
+        return mindex;
+
+    }
 
 
     /*
     This method replaces all instances of oldValue with newValue.
      */
-//    public void replace(int[] arr, int oldValue, int newValue){
-//
-//    }
+    public void replace(int[] arr, int oldValue, int newValue){
+        for (int i = 0; i < arr.length; i++) {
+            if(arr[i] == oldValue)
+                arr[i] = newValue;
+        }
+    }
+
+    public void changeX(int x){
+         x = x + 1;
+    }
 
     //These print methods are provided for printing arrays.
     public void printArray(int[] arr){

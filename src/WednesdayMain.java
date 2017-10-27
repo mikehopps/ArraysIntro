@@ -13,10 +13,16 @@ public class WednesdayMain {
 
         System.out.println(obj.average(intTest));
 
-//        System.out.println(obj.indexOfShortestString(strTest));
+        System.out.println(obj.indexOfShortestString(strTest));
 
-//        obj.replace(intTest, 1, 4);
-//        obj.printArray(intTest);
+        obj.replace(intTest, 1, 4);
+        obj.printArray(intTest);
+
+        int a = 7;
+        obj.changeX(a);
+        System.out.println(a);
+
+
     }
 
 
